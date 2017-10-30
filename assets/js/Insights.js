@@ -18,17 +18,6 @@ function cargarPagina() {
   var signup = document.getElementById('signup');
   var logout = document.getElementById('logout');
 
-
-  // evento signup
-  // signup.addEventListener('click', function() {
-  //   var mailValue = email.value;
-  //   var passValue = password.value;
-  //   var auth = firebase.auth();
-  //
-  //   var promise = auth.createUserWithEmailAndPassword(mailValue, passValue);
-  //   promise.catch(e => alert(e.message));
-  // });
-
   logout.addEventListener('click', function(e) {
     firebase.auth().signOut();
   });
